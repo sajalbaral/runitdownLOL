@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Serif", serif;
+}
+
+:root {
+  --mainBg: #1c1c1f;
+  --textClr: #eaf4fd;
+  --red: #c71928;
+}
+
+/**
+
+General
+
+**/
+
+body {
+  background-color: var(--mainBg);
+  color: white;
+  padding-bottom: 50px;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--textClr);
+}
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  position: relative;
+  bottom: -14px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  background: #e2ee0d;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+/** 
+
+Navbar
+
+**/
+
+.logo {
+  width: 50px;
+}
+
+nav {
+  background-color: var(--red);
+  font-size: 16px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1500px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
+.left-container,
+.right-container {
+  display: flex;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.left-container {
+  width: 60%;
+}
+
+li i {
+  padding-right: 10px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--red);
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  padding: 5px 20px;
+  font-size: 8px;
+  position: fixed;
+}
+
+section img {
+  margin-top: 10px;
+  width: 500px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.splashart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.search {
+  border: 2px solid var(--red);
+  outline: none;
+  border-radius: 50px;
+  height: 60px;
+  padding: 2px 23px 2px 30px;
+  width: 600px;
+  background-color: white;
+  color: black;
+  font-size: 24px;
+}
+
+/**
+
+Contact Us
+
+**/
+
+input {
+  margin-top: 10px;
+  width: 40%;
+  padding: 8px;
+  height: 50px;
+  border: none;
+  appearance: none;
+  background-color: var(--mainBg);
+  border-bottom: 1px solid #ececec;
+  color: #ececec;
+  font-size: 18px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid var(--red);
+  transition: all 0.5s ease-in;
+}
+
+button {
+  padding: 10px 50px;
+  background-color: white;
+  border: none;
+  color: var(--red);
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.tm {
+  font-size: 15px;
+}
+
+.on-top {
+  display: block;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-header {
+  grid-column: 1 / -1;
+  letter-spacing: 0.06em;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.btm-txt {
+  margin-top: 30px;
+}
+
+em {
+  color: var(--red);
+}
+
+.tos {
+  display: flex;
+  width: 500px;
+  text-align: center;
+  margin: 0px auto;
+  padding: 100px;
+}
+
+#searchButton {
+  width: 80px;
+}
+
+/** Summoners Details **/
+.dataShowcase {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+#summonerName,
+#summonerLevelData,
+#summonerRank,
+#summonerWin,
+#summonerLoss {
+  font-size: 30px;
+}
+
+#summonerLevelData,
+#summonerRank,
+#summonerWin,
+#summonerLoss {
+  margin-top: 1rem;
+}
+
+#summonerIconId {
+  width: 300px;
+}
